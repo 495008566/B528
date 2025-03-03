@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dunhuang Dance Evaluation System - Interface Mockups</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .mockup {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            white-space: pre;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+        .description {
+            margin-bottom: 20px;
+        }
+        .image-placeholder {
+            background-color: #eee;
+            border: 1px dashed #999;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dunhuang Dance Evaluation System - Interface Mockups</h1>
+        
+        <div class="description">
+            <p>These mockups illustrate how the Dunhuang Dance Evaluation System would look and function in a real-world setting. The actual implementation would use PyQt5 to create interactive interfaces with real-time video processing and feedback.</p>
+        </div>
+        
+        <h2>1. Skeleton Detection View</h2>
+        <div class="description">
+            <p>This view shows how the system detects and visualizes the dancer's skeleton points using MediaPipe. In the actual application, these points would be overlaid on the video feed and color-coded to indicate alignment quality.</p>
+        </div>
+        <div class="image-placeholder">
+            [Skeleton Detection Visualization - Interactive 3D model with 33 tracked body points]
+        </div>
+        <div class="mockup">
++------------------------------------------------------------------+
+|  Dunhuang Dance Evaluation System                        [_][X]  |
++------------------------------------------------------------------+
+|                                                                  |
+|                      +-----+                                     |
+|                      |     |                                     |
+|                      |  O  |  <-- Head                           |
+|                      |     |                                     |
+|                      +-----+                                     |
+|                         |                                        |
+|                         |                                        |
+|                      +--+--+                                     |
+|                     /|     |\                                    |
+|                    / |     | \                                   |
+|                   /  |     |  \                                  |
+|                  O   |     |   O  <-- Shoulders                  |
+|                 /    |     |    \                                |
+|                /     |     |     \                               |
+|               /      |     |      \                              |
+|              O       |     |       O  <-- Elbows                 |
+|               \      |     |      /                              |
+|                \     |     |     /                               |
+|                 \    |     |    /                                |
+|                  O   |     |   O  <-- Wrists                     |
+|                      |     |                                     |
+|                      |     |                                     |
+|                      |     |                                     |
+|                      +-----+                                     |
+|                      |     |                                     |
+|                      |     |  <-- Hips                           |
+|                      |     |                                     |
+|                      +-----+                                     |
+|                     /       \                                    |
+|                    /         \                                   |
+|                   /           \                                  |
+|                  O             O  <-- Knees                      |
+|                 /               \                                |
+|                /                 \                               |
+|               /                   \                              |
+|              O                     O  <-- Ankles                 |
+|             / \                   / \                            |
+|            /   \                 /   \                           |
+|           O     O               O     O  <-- Feet                |
+|                                                                  |
+|                                                                  |
++------------------------------------------------------------------+
+|  Status: Skeleton detected successfully                          |
++------------------------------------------------------------------+
+
+Note: In the actual application, the skeleton points would be overlaid on the video feed of the dancer. The points would be color-coded to indicate the quality of the movement:
+- Green: Good alignment with reference movement
+- Yellow: Moderate alignment
+- Red: Poor alignment
+
+The skeleton detection uses MediaPipe to track 33 key points on the human body, providing accurate real-time tracking of the dancer's movements.
+</div>
+        
+        <h2>2. Scoring Interface</h2>
+        <div class="description">
+            <p>The main interface displays real-time scores and feedback as the dancer performs. It includes controls for selecting input sources and reference movements, as well as detailed scoring across multiple aspects of the performance.</p>
+        </div>
+        <div class="image-placeholder">
+            [Real-time Scoring Interface - Dynamic visualization with color-coded feedback]
+        </div>
+        <div class="mockup">
++------------------------------------------------------------------+
+|  Dunhuang Dance Evaluation System                        [_][X]  |
++------------------------------------------------------------------+
+|  [Camera Feed with Skeleton Overlay]        | Control Panel      |
+|                                            |                     |
+|                                            | Input Source:       |
+|                                            | [X] Camera 0        |
+|                                            | [ ] Video File      |
+|                                            | [Browse...]         |
+|                                            |                     |
+|                                            | Reference Movement: |
+|                                            | Category: FeiTian   |
+|                                            | Movement: PanTui... |
+|                                            | [Browse...]         |
+|                                            |                     |
+|                                            | Settings:           |
+|                                            | Sensitivity: [====] |
+|                                            | Feedback: [Detailed]|
+|                                            |                     |
+|                                            | [Start] [Stop]      |
+|                                            | [Reset] [Save]      |
++--------------------------------------------+---------------------+
+|  Scores:                                                         |
+|  +--------------------------------------------------------------+|
+|  |                                                              ||
+|  |  Overall Score: 85.7                                         ||
+|  |                                                              ||
+|  |  +----------------+  +----------------+  +----------------+  ||
+|  |  | Timing         |  | Posture        |  | Fluidity       |  ||
+|  |  |                |  |                |  |                |  ||
+|  |  |     92.3       |  |     78.5       |  |     86.2       |  ||
+|  |  |                |  |                |  |                |  ||
+|  |  | [===========] |  | [=========  ] |  | [==========  ] |  ||
+|  |  +----------------+  +----------------+  +----------------+  ||
+|  |                                                              ||
+|  |  +----------------+  +----------------+                      ||
+|  |  | Stability      |  | Expressiveness |                      ||
+|  |  |                |  |                |                      ||
+|  |  |     90.1       |  |     81.4       |                      ||
+|  |  |                |  |                |                      ||
+|  |  | [===========] |  | [==========  ] |                      ||
+|  |  +----------------+  +----------------+                      ||
+|  |                                                              ||
+|  +--------------------------------------------------------------+|
+|                                                                  |
+|  Feedback:                                                       |
+|  +--------------------------------------------------------------+|
+|  | Overall: Your performance is very good! Keep up the good work.||
+|  |                                                              ||
+|  | Timing: Excellent timing with the rhythm of the movement.    ||
+|  |                                                              ||
+|  | Posture: Your upper body alignment needs improvement.        ||
+|  | Try to keep your back straighter during the turning sequence.||
+|  |                                                              ||
+|  | Fluidity: Good flow between movements, but transitions       ||
+|  | between poses 3 and 4 could be smoother.                     ||
+|  |                                                              ||
+|  | Stability: Excellent stability throughout the performance.   ||
+|  |                                                              ||
+|  | Improvement Suggestions:                                     ||
+|  | 1. Focus on maintaining proper alignment during turns        ||
+|  | 2. Practice the transition between poses 3 and 4             ||
+|  | 3. Continue to work on expressiveness in arm movements       ||
+|  +--------------------------------------------------------------+|
++------------------------------------------------------------------+
+
+Note: The actual interface would display real-time scores and feedback as the dancer performs. The scores would be updated continuously, and the feedback would be generated based on the dancer's performance. The interface would also include visualizations of the dancer's movement trajectory compared to the reference movement.
+</div>
+        
+        <h2>3. Movement Comparison</h2>
+        <div class="description">
+            <p>This view allows dancers to compare their movements with reference movements. It includes side-by-side skeleton animations, trajectory visualizations, and DTW path analysis to highlight differences.</p>
+        </div>
+        <div class="image-placeholder">
+            [Movement Comparison View - Side-by-side animation with trajectory analysis]
+        </div>
+        <div class="mockup">
++------------------------------------------------------------------+
+|  Dunhuang Dance Evaluation System - Movement Comparison   [_][X]  |
++------------------------------------------------------------------+
+|                                                                  |
+|  Reference Movement                 |  Learner Movement          |
+|  +------------------------------+   |  +------------------------------+  |
+|  |                              |   |  |                              |  |
+|  |         [Skeleton            |   |  |         [Skeleton            |  |
+|  |          Animation]          |   |  |          Animation]          |  |
+|  |                              |   |  |                              |  |
+|  |                              |   |  |                              |  |
+|  |                              |   |  |                              |  |
+|  +------------------------------+   |  +------------------------------+  |
+|                                                                  |
+|  Movement Trajectory Comparison                                  |
+|  +--------------------------------------------------------------+  |
+|  |                                                              |  |
+|  |                                                              |  |
+|  |                   /\      /\                                 |  |
+|  |                  /  \    /  \                                |  |
+|  |    Reference:   /    \__/    \__                            |  |
+|  |                /              \                             |  |
+|  |               /                \                            |  |
+|  |              /                  \                           |  |
+|  |    Learner:  /\      /\          \                         |  |
+|  |             /  \    /  \__         \                       |  |
+|  |            /    \__/      \         \                      |  |
+|  |           /                \__        \                     |  |
+|  |                                                              |  |
+|  +--------------------------------------------------------------+  |
+|                                                                  |
+|  DTW Path Analysis                                               |
+|  +--------------------------------------------------------------+  |
+|  |                                                              |  |
+|  |    Path Length: 273                                          |  |
+|  |    Diagonal Ratio: 0.93                                      |  |
+|  |    Monotonicity: 0.50                                        |  |
+|  |    Smoothness: -1.80                                         |  |
+|  |                                                              |  |
+|  |    [DTW Path Visualization]                                  |  |
+|  |                                                              |  |
+|  |    Key Differences:                                          |  |
+|  |    - Timing delay in middle section (frames 45-60)           |  |
+|  |    - Posture deviation in upper body (frames 75-90)          |  |
+|  |    - Excessive movement in transition (frames 120-135)       |  |
+|  |                                                              |  |
+|  +--------------------------------------------------------------+  |
+|                                                                  |
++------------------------------------------------------------------+
+
+Note: The actual interface would show animated skeletons for both the reference and learner movements. The movement trajectory would be visualized as a 3D plot or a series of 2D projections. The DTW path analysis would provide detailed information about the alignment between the two movements, highlighting areas where the learner deviates from the reference.
+</div>
+        
+        <h2>4. Real-time Feedback</h2>
+        <div class="description">
+            <p>The real-time feedback interface provides immediate guidance to dancers as they practice. It highlights specific areas for improvement and tracks progress through movement sequences.</p>
+        </div>
+        <div class="image-placeholder">
+            [Real-time Feedback Interface - Immediate guidance with visual cues]
+        </div>
+        <div class="mockup">
++------------------------------------------------------------------+
+|  Dunhuang Dance Evaluation System - Real-time Feedback    [_][X]  |
++------------------------------------------------------------------+
+|                                                                  |
+|  [Camera Feed with Skeleton Overlay and Real-time Annotations]   |
+|                                                                  |
+|  +--------------------------------------------------------------+  |
+|  |                                                              |  |
+|  |                                                              |  |
+|  |                                                              |  |
+|  |                                                              |  |
+|  |                                                              |  |
+|  |                                                              |  |
+|  |                                                              |  |
+|  |                                                              |  |
+|  |                                                              |  |
+|  |                                                              |  |
+|  |                                                              |  |
+|  |                                                              |  |
+|  +--------------------------------------------------------------+  |
+|                                                                  |
+|  Current Score: 78.5                                             |
+|  [==========          ] Improving...                            |
+|                                                                  |
+|  Real-time Feedback:                                             |
+|  +--------------------------------------------------------------+  |
+|  |                                                              |  |
+|  |  "Raise your right arm higher"                               |  |
+|  |  "Maintain balance during the turn"                          |  |
+|  |  "Extend your left leg further"                              |  |
+|  |  "Good posture! Keep it up"                                  |  |
+|  |                                                              |  |
+|  +--------------------------------------------------------------+  |
+|                                                                  |
+|  Movement Progress:                                              |
+|  [====================] 100%                                     |
+|  Next movement: CeShenDanTuoShi                                  |
+|                                                                  |
++------------------------------------------------------------------+
+
+Note: The real-time feedback interface would provide immediate guidance to the dancer as they perform. The feedback would be specific and actionable, focusing on the most important aspects of the movement that need improvement. The interface would also show the dancer's progress through the movement sequence and indicate the next movement to perform.
+</div>
+        
+        <h2>5. Performance History</h2>
+        <div class="description">
+            <p>This view allows dancers to track their progress over time. It shows score improvements across different aspects and highlights the most improved areas.</p>
+        </div>
+        <div class="image-placeholder">
+            [Performance History View - Progress tracking with detailed analytics]
+        </div>
+        <div class="mockup">
++------------------------------------------------------------------+
+|  Dunhuang Dance Evaluation System - Performance History   [_][X]  |
++------------------------------------------------------------------+
+|                                                                  |
+|  Dancer: User123                                                 |
+|  Movement: PanTuiXieShenShi                                      |
+|                                                                  |
+|  Performance History:                                            |
+|  +--------------------------------------------------------------+  |
+|  |                                                              |  |
+|  |  Overall Score Progress                                      |  |
+|  |                                                              |  |
+|  |  100 |                                                       |  |
+|  |      |                                          o            |  |
+|  |   80 |                      o         o        /             |  |
+|  |      |              o      /|        /|       /              |  |
+|  |   60 |             /|     / |       / |      /               |  |
+|  |      |            / |    /  |      /  |     /                |  |
+|  |   40 |       o   /  |   /   |     /   |    /                 |  |
+|  |      |      /|  /   |  /    |    /    |   /                  |  |
+|  |   20 |     / | /    | /     |   /     |  /                   |  |
+|  |      |    /  |/     |/      |  /      | /                    |  |
+|  |    0 +----------------------------------------------------   |  |
+|  |        1    2      3       4        5       6       7        |  |
+|  |                          Session                             |  |
+|  |                                                              |  |
+|  +--------------------------------------------------------------+  |
+|                                                                  |
+|  Aspect Breakdown:                                               |
+|  +--------------------------------------------------------------+  |
+|  |                                                              |  |
+|  |  Timing     [Session 1: 45] [Session 7: 92] +47              |  |
+|  |  Posture    [Session 1: 30] [Session 7: 78] +48              |  |
+|  |  Fluidity   [Session 1: 25] [Session 7: 86] +61              |  |
+|  |  Stability  [Session 1: 40] [Session 7: 90] +50              |  |
+|  |                                                              |  |
+|  +--------------------------------------------------------------+  |
+|                                                                  |
+|  Most Improved Areas:                                            |
+|  +--------------------------------------------------------------+  |
+|  |                                                              |  |
+|  |  1. Fluidity: +61 points                                     |  |
+|  |     - Smoother transitions between poses                     |  |
+|  |     - Better flow in arm movements                           |  |
+|  |                                                              |  |
+|  |  2. Stability: +50 points                                    |  |
+|  |     - Improved balance during turns                          |  |
+|  |     - Better weight distribution                             |  |
+|  |                                                              |  |
+|  |  3. Posture: +48 points                                      |  |
+|  |     - Better alignment of spine                              |  |
+|  |     - Improved head position                                 |  |
+|  |                                                              |  |
+|  +--------------------------------------------------------------+  |
+|                                                                  |
++------------------------------------------------------------------+
+
+Note: The performance history interface would allow dancers to track their progress over time. The interface would show overall score improvements as well as breakdowns by aspect. The system would highlight the most improved areas and provide specific details about what has improved. This helps dancers see their progress and stay motivated.
+</div>
+    </div>
+</body>
+</html>

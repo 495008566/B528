@@ -1,0 +1,38 @@
++------------------------------------------------------------------+
+|  [Camera Feed with Skeleton Overlay]        | Control Panel      |
+|                                            |                     |
+|                                            | Input Source:       |
+|                                            | [X] Camera 0        |
+|                                            | [ ] Video File      |
+|                                            | [Browse...]         |
+|                                            |                     |
+|                                            | Reference Movement: |
+|                                            | Category: FeiTian   |
+|                                            | Movement: PanTui... |
+|                                            | [Browse...]         |
+|                                            |                     |
+|                                            | Settings:           |
+|                                            | Sensitivity: [====] |
+|                                            | Feedback: [Detailed]|
+|                                            |                     |
+|                                            | [Start] [Stop]      |
+|                                            | [Reset] [Save]      |
++--------------------------------------------+---------------------+
+|  Scores:                                                         |
+|  +--------------------------------------------------------------+|
+|  |  Overall Score: 85.7                                         ||
+|  |                                                              ||
+|  |  +----------------+  +----------------+  +----------------+  ||
+|  |  | Timing         |  | Posture        |  | Fluidity       |  ||
+|  |  |     92.3       |  |     78.5       |  |     86.2       |  ||
+|  |  | [===========] |  | [=========  ] |  | [==========  ] |  ||
+|  |  +----------------+  +----------------+  +----------------+  ||
+|  +--------------------------------------------------------------+|
+|                                                                  |
+|  Feedback:                                                       |
+|  +--------------------------------------------------------------+|
+|  | Overall: Your performance is very good! Keep up the good work.||
+|  | Posture: Your upper body alignment needs improvement.        ||
+|  | Try to keep your back straighter during the turning sequence.||
+|  +--------------------------------------------------------------+|
++------------------------------------------------------------------+

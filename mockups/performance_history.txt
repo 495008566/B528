@@ -1,0 +1,58 @@
++------------------------------------------------------------------+
+|  Dunhuang Dance Evaluation System - Performance History   [_][X]  |
++------------------------------------------------------------------+
+|                                                                  |
+|  Dancer: User123                                                 |
+|  Movement: PanTuiXieShenShi                                      |
+|                                                                  |
+|  Performance History:                                            |
+|  +--------------------------------------------------------------+  |
+|  |                                                              |  |
+|  |  Overall Score Progress                                      |  |
+|  |                                                              |  |
+|  |  100 |                                                       |  |
+|  |      |                                          o            |  |
+|  |   80 |                      o         o        /             |  |
+|  |      |              o      /|        /|       /              |  |
+|  |   60 |             /|     / |       / |      /               |  |
+|  |      |            / |    /  |      /  |     /                |  |
+|  |   40 |       o   /  |   /   |     /   |    /                 |  |
+|  |      |      /|  /   |  /    |    /    |   /                  |  |
+|  |   20 |     / | /    | /     |   /     |  /                   |  |
+|  |      |    /  |/     |/      |  /      | /                    |  |
+|  |    0 +----------------------------------------------------   |  |
+|  |        1    2      3       4        5       6       7        |  |
+|  |                          Session                             |  |
+|  |                                                              |  |
+|  +--------------------------------------------------------------+  |
+|                                                                  |
+|  Aspect Breakdown:                                               |
+|  +--------------------------------------------------------------+  |
+|  |                                                              |  |
+|  |  Timing     [Session 1: 45] [Session 7: 92] +47              |  |
+|  |  Posture    [Session 1: 30] [Session 7: 78] +48              |  |
+|  |  Fluidity   [Session 1: 25] [Session 7: 86] +61              |  |
+|  |  Stability  [Session 1: 40] [Session 7: 90] +50              |  |
+|  |                                                              |  |
+|  +--------------------------------------------------------------+  |
+|                                                                  |
+|  Most Improved Areas:                                            |
+|  +--------------------------------------------------------------+  |
+|  |                                                              |  |
+|  |  1. Fluidity: +61 points                                     |  |
+|  |     - Smoother transitions between poses                     |  |
+|  |     - Better flow in arm movements                           |  |
+|  |                                                              |  |
+|  |  2. Stability: +50 points                                    |  |
+|  |     - Improved balance during turns                          |  |
+|  |     - Better weight distribution                             |  |
+|  |                                                              |  |
+|  |  3. Posture: +48 points                                      |  |
+|  |     - Better alignment of spine                              |  |
+|  |     - Improved head position                                 |  |
+|  |                                                              |  |
+|  +--------------------------------------------------------------+  |
+|                                                                  |
++------------------------------------------------------------------+
+
+Note: The performance history interface would allow dancers to track their progress over time. The interface would show overall score improvements as well as breakdowns by aspect. The system would highlight the most improved areas and provide specific details about what has improved. This helps dancers see their progress and stay motivated.

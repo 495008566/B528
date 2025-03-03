@@ -1,0 +1,55 @@
++------------------------------------------------------------------+
+|  Dunhuang Dance Evaluation System                        [_][X]  |
++------------------------------------------------------------------+
+|                                                                  |
+|                      +-----+                                     |
+|                      |     |                                     |
+|                      |  O  |  <-- Head                           |
+|                      |     |                                     |
+|                      +-----+                                     |
+|                         |                                        |
+|                         |                                        |
+|                      +--+--+                                     |
+|                     /|     |\                                    |
+|                    / |     | \                                   |
+|                   /  |     |  \                                  |
+|                  O   |     |   O  <-- Shoulders                  |
+|                 /    |     |    \                                |
+|                /     |     |     \                               |
+|               /      |     |      \                              |
+|              O       |     |       O  <-- Elbows                 |
+|               \      |     |      /                              |
+|                \     |     |     /                               |
+|                 \    |     |    /                                |
+|                  O   |     |   O  <-- Wrists                     |
+|                      |     |                                     |
+|                      |     |                                     |
+|                      |     |                                     |
+|                      +-----+                                     |
+|                      |     |                                     |
+|                      |     |  <-- Hips                           |
+|                      |     |                                     |
+|                      +-----+                                     |
+|                     /       \                                    |
+|                    /         \                                   |
+|                   /           \                                  |
+|                  O             O  <-- Knees                      |
+|                 /               \                                |
+|                /                 \                               |
+|               /                   \                              |
+|              O                     O  <-- Ankles                 |
+|             / \                   / \                            |
+|            /   \                 /   \                           |
+|           O     O               O     O  <-- Feet                |
+|                                                                  |
+|                                                                  |
++------------------------------------------------------------------+
+|  Status: Skeleton detected successfully                          |
++------------------------------------------------------------------+
+
+Note: In the actual application, the skeleton points would be overlaid on the video feed of the dancer. The points would be color-coded to indicate the quality of the movement:
+- Green: Good alignment with reference movement
+- Yellow: Moderate alignment
+- Red: Poor alignment
+
+The skeleton detection uses MediaPipe to track 33 key points on the human body, providing accurate real-time tracking of the dancer's movements.
